@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ConsultorioMedico.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Administrar Usuarios</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Password
+            </th>
+            <th>
+                Pregunta
+            </th>
+            <th>
+                Respuesta 
+            </th>
+           @* <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>*@
+           
+            <th>
+               Rol
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PassUser)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdPreguntaNavigation.IdPreguntas)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RespUser)
+            </td>
+           @* <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>*@
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.IdRolNavigation.IdRol)
+            </td>
+                
+                <td class="d-flex justify-content-evenly">
+                    @if (item.IdRol == 1 && item.NomUser == "Admin") //si el rol es admin entonces que solo muestre detalles
+                    {
+                        <p>Administrador</p>
+                    }
+                    else
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.IdUsuario" class="btn btn-outline-warning">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@item.IdUsuario" class="btn btn-outline-danger">Borrar</a>
+                        <a asp-action="Details" asp-route-id="@item.IdUsuario" class="btn btn-outline-dark">Detalles</a>
+                    }
+
+                    
+                    
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

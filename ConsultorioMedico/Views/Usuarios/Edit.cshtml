@@ -1,0 +1,54 @@
+﻿@model ConsultorioMedico.Models.Usuario
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Editar Usuario</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdUsuario" />
+            <div class="form-group">
+                <label class="control-label">Usuario</label>
+                <input asp-for="NomUser" class="form-control" />
+                <span asp-validation-for="NomUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Password</label>
+                <input asp-for="PassUser" class="form-control" />
+                <span asp-validation-for="PassUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Respuesta</label>
+                <input asp-for="RespUser" class="form-control" />
+                <span asp-validation-for="RespUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="Estado" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label a class="control-label">Pregunta</label>
+                <select asp-for="IdPregunta" class="form-control" asp-items="ViewBag.IdPregunta"></select>
+                <span asp-validation-for="IdPregunta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Rol</label>
+                <select asp-for="IdRol" class="form-control" asp-items="ViewBag.IdRol"></select>
+                <span asp-validation-for="IdRol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <button asp-action="Index" class="btn btn-outline-dark">Volver</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,83 @@
+﻿@model List<ConsultorioMedico.Models.Usuario>
+<style>
+    .navbar {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .navbar .nav-item .nav-link {
+      color: #495057;
+      font-weight: 500;
+      padding: 8px 15px;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .navbar .nav-item .nav-link:hover,
+    .navbar .nav-item .nav-link:focus {
+      background-color: #007bff;
+      color: #fff;
+    }
+ </style>
+<form asp-action="Index" asp-controller="Home" method="post">
+    <button type="submit" class="btn btn-outline-dark">Cerrar Sesion</button>
+</form>
+@if(ViewBag.sesion == "1")
+{
+    <center><h1>Bienvenido al Modulo de Administrador</h1></center>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Index">Medicos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Secretariums" asp-action="Index">Secretaria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Especialidads" asp-action="Index">Especialidad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Expedientes" asp-action="Index">Expedientes</a>
+            </li>
+        </ul>
+    </nav>
+}
+else if(ViewBag.sesion == "2")
+{
+    <center><h1>Bienvenido al Modulo de Doctor</h1></center>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Index">Medicos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Especialidads" asp-action="Index">Especialidad</a>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Expedientes" asp-action="Index">Expedientes</a>
+            </li>
+        </ul>
+    </nav>
+}
+else
+{
+    <center><h1>Bienvenida al Modulo de Secretaria</h1></center>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </li>
+            <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Secretariums" asp-action="Index">Secretaria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+            </li>
+        </ul>
+    </nav>
+}

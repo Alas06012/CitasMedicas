@@ -1,0 +1,165 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ConsultorioMedico
+build_property.RootNamespace = ConsultorioMedico
+build_property.ProjectDir = D:\Diego\Ciclo 7\Paginas Web Activas\Proyecto\version2\ConsultorioMedicoConLogin\ConsultorioMedico\ConsultorioMedico\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Diego\Ciclo 7\Paginas Web Activas\Proyecto\version2\ConsultorioMedicoConLogin\ConsultorioMedico\ConsultorioMedico
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Especialidads/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNpYWxpZGFkc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Especialidads/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNpYWxpZGFkc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Especialidads/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNpYWxpZGFkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Especialidads/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNpYWxpZGFkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Especialidads/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNpYWxpZGFkc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Expedientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZWRpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Expedientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZWRpZW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Expedientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZWRpZW50ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Expedientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZWRpZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Expedientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZWRpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Medicos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Medicos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Medicos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Medicos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Medicos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Recetas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXRhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Recetas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXRhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Recetas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXRhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Recetas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXRhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Recetas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXRhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Secretariums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJpdW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Secretariums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJpdW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Secretariums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJpdW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Secretariums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJpdW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Secretariums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJpdW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diego/Ciclo 7/Paginas Web Activas/Proyecto/version2/ConsultorioMedicoConLogin/ConsultorioMedico/ConsultorioMedico/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7y5essghxd

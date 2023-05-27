@@ -1,0 +1,77 @@
+﻿@model IEnumerable<ConsultorioMedico.Models.Secretarium>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Administrar Secretarias</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Código Secretaria
+            </th>
+            <th>
+                DUI
+            </th>
+            <th>
+                Nombres
+            </th>
+            <th>
+                Apellidos
+            </th>
+            <th>
+                Dirección
+            </th>
+            <th>
+                Teléfono
+            </th>
+@*            <th>
+               Estado
+            </th>*@
+            <th>Usuario
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodSecre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuiSecre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomSecre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApeSecre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DirSecre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelSecre)
+            </td>
+           @* <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.IdUsuario)
+            </td>
+                <td class="d-flex justify-content-evenly">
+                    <a asp-action="Edit" asp-route-id="@item.IdSecretaria" class="btn btn-outline-warning">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.IdSecretaria" class="btn btn-outline-dark">Detalles</a>
+                    <a asp-action="Delete" asp-route-id="@item.IdSecretaria" class="btn btn-outline-danger">Borrar</a>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

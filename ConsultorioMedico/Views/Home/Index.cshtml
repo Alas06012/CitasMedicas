@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Usuario
+
+<style>
+    .login-box {
+      max-width: 400px;
+      margin: 0 auto;
+      margin-top: 100px;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .form-group input {
+      border-radius: 5px;
+    }
+    .login-box button[type="submit"] {
+      width: 100%;
+    }
+    .login-box .forgot-password {
+      text-align: center;
+      margin-top: 20px;
+    }
+ </style>
+<div class="container">
+    <div class="login-box">
+        <h2>LOGIN</h2>
+        <form asp-action="login" asp-controller="Home" method="post" id="form2">
+            <div class="form-group">
+                <label asp-for="NomUser"></label>
+                <input id="NombreUsuario" class="form-control" name="usuario" placeholder="Usuario" />
+                <span asp-validation-for="NomUser" class="badge bg-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassUser"></label>
+                <input type="Password" id="Contra" class="form-control" name="contra" placeholder="********" />
+                <span asp-validation-for="PassUser" class="badge bg-danger"></span>
+            </div>
+            <br />
+            <center>
+            <input type="submit" value="Iniciar Sesion" class="btn btn-info" />
+            </center>
+        </form>
+    </div>
+</div>

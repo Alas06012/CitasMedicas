@@ -1,0 +1,49 @@
+﻿@model ConsultorioMedico.Models.Receta
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Editar Receta</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdRecetas" />
+            <div class="form-group">
+                <label class="control-label">Codigo Recetas</label>
+                <input asp-for="CodRecetas" class="form-control" />
+                <span asp-validation-for="CodRecetas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Medicamento</label>
+                <input asp-for="Medicamento" class="form-control" />
+                <span asp-validation-for="Medicamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Cantidad</label>
+                <input asp-for="Cantidad" class="form-control" />
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Prescripcion</label>
+                <input asp-for="Prescripcion" class="form-control" />
+                <span asp-validation-for="Prescripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="Estado" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <button asp-action="Index" class="btn btn-outline-dark">Volver</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

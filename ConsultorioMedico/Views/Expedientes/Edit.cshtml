@@ -1,0 +1,40 @@
+﻿@model ConsultorioMedico.Models.Expediente
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Editar Expediente</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdExpediente" />
+            <div class="form-group">
+                <label class="control-label">Codigo Expediente</label>
+                <input asp-for="CodExpediente" class="form-control" />
+                <span asp-validation-for="CodExpediente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Responsable</label>
+                <input asp-for="Responsable" class="form-control" />
+                <span asp-validation-for="Responsable" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="Estado" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <button asp-action="Index" class="btn btn-outline-dark">Volver</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

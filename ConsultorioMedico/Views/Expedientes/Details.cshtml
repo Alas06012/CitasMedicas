@@ -1,0 +1,39 @@
+﻿@model ConsultorioMedico.Models.Expediente
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detalles Expediente</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Codigo Expediente: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CodExpediente)
+        </dd>
+        <dt class = "col-sm-2">
+            Responsable
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Responsable)
+        </dd>
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>*@
+    </dl>
+</div>
+<div>
+    <button asp-action="Edit" asp-route-id="@Model?.IdExpediente" class="btn btn-primary">Editar</button> |
+
+    <a asp-action="Index" class="btn btn-outline-dark">Volver</a>
+
+
+</div>

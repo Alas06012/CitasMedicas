@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ConsultorioMedico.Models.Expediente>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Administrar Expedientes</h1>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Código Expediente
+            </th>
+            <th>
+                Responsable
+            </th>
+           @* <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodExpediente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Responsable)
+            </td>
+           @* <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>*@
+             <td class="d-flex justify-content-evenly">
+                    <a asp-action="Edit" asp-route-id="@item.IdExpediente" class="btn btn-outline-warning">Editar</a> 
+                    <a asp-action="Details" asp-route-id="@item.IdExpediente" class="btn btn-outline-dark">Detalles</a> 
+                    <a asp-action="Delete" asp-route-id="@item.IdExpediente" class="btn btn-outline-danger">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
