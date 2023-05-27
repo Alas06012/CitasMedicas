@@ -11181,11 +11181,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Diego\\Ciclo 7\\Paginas Web Activas\\Proyecto\\version2\\ConsultorioMedicoConLogin\\ConsultorioMedico\\ConsultorioMedico\\ConsultorioMedico.csproj",
+      "projectUniqueName": "D:\\Diego\\Ciclo 7\\Paginas Web Activas\\CitasMedicas\\ConsultorioMedico\\ConsultorioMedico.csproj",
       "projectName": "ConsultorioMedico",
-      "projectPath": "D:\\Diego\\Ciclo 7\\Paginas Web Activas\\Proyecto\\version2\\ConsultorioMedicoConLogin\\ConsultorioMedico\\ConsultorioMedico\\ConsultorioMedico.csproj",
+      "projectPath": "D:\\Diego\\Ciclo 7\\Paginas Web Activas\\CitasMedicas\\ConsultorioMedico\\ConsultorioMedico.csproj",
       "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "D:\\Diego\\Ciclo 7\\Paginas Web Activas\\Proyecto\\version2\\ConsultorioMedicoConLogin\\ConsultorioMedico\\ConsultorioMedico\\obj\\",
+      "outputPath": "D:\\Diego\\Ciclo 7\\Paginas Web Activas\\CitasMedicas\\ConsultorioMedico\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

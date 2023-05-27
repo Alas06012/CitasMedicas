@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jHkRKvfsLuen7g4+enfW623kqPIJbHTHkAcAuSILBPAjfXTAtQiiQzgVRDEUMOl9Hm2SsQUsT4a+/bhlD+ximA==",
+  "dgSpecHash": "/mlgHhef25M0loPj2ruOQEcKYQigc92LhixmpAnUvlSzEe/2ZUVq+2oC2q05mh6mAU/3z7V401rm9mVDqdmpkQ==",
   "success": true,
-  "projectFilePath": "D:\\Diego\\Ciclo 7\\Paginas Web Activas\\Proyecto\\version2\\ConsultorioMedicoConLogin\\ConsultorioMedico\\ConsultorioMedico\\ConsultorioMedico.csproj",
+  "projectFilePath": "D:\\Diego\\Ciclo 7\\Paginas Web Activas\\CitasMedicas\\ConsultorioMedico\\ConsultorioMedico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diego\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
