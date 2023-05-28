@@ -60,6 +60,8 @@ namespace ConsultorioMedico.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdUsuario,NomUser,PassUser,RespUser,Estado,IdPregunta,IdRol")] Usuario usuario)
         {
+            var contr = usuario.PassUser;
+            usuario.PassUser = PasswordHelper.HashPassword(contr);
             if (ModelState.IsValid)
             {
                 _context.Add(usuario);
@@ -100,6 +102,10 @@ namespace ConsultorioMedico.Controllers
             {
                 return NotFound();
             }
+
+            var contrUp = usuario.PassUser;
+            usuario.PassUser = PasswordHelper.HashPassword(contrUp);
+
 
             if (ModelState.IsValid)
             {

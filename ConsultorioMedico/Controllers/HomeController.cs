@@ -23,21 +23,37 @@ namespace ConsultorioMedico.Controllers
         [HttpPost]
         public IActionResult login(string usuario, string contra)
         {
-            var users = datos.Usuarios.FirstOrDefault(x => x.NomUser == usuario && x.PassUser == contra);
-
-            if (users.NomUser != null && users.PassUser != null)
+            var verifycontra = PasswordHelper.HashPassword(contra);
+            var users = datos.Usuarios.FirstOrDefault(x => x.NomUser == usuario && x.PassUser == verifycontra);
+            try
             {
-                string nivel = users.IdRol.ToString();
-                HttpContext.Session.SetString("varSesion", nivel);
-                return RedirectToAction("Privacy", "Home");
-            }
-            else
-            {
-                return RedirectToAction("Index", "Home");
-            }
+                if (users == null)
+                {
+                    TempData["Resultado"] = "Intente nuevamente...";
+                    return RedirectToAction("Index", "Home");
+                }
+                else if (users.NomUser == null && users.PassUser == null)
+                {
+                    TempData["Resultado"] = "Intente nuevamente...";
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    
+                    string nivel = users.IdRol.ToString();
+                    HttpContext.Session.SetString("varSesion", nivel);
+                    return RedirectToAction("Privacy", "Home");
+                }
 
-            TempData["Resultado"] = "Intente nuevamente...";
-            return View();
+                TempData["Resultado"] = "Intente nuevamente...";
+                return View();
+            }
+            catch (Exception e)
+            {
+                TempData["Resultado"] = "Intente nuevamente...";
+                return View();
+            }
+           
         }
 
 
