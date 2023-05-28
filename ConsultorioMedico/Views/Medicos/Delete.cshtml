@@ -5,87 +5,64 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h4>Eliminar Medico</h4>
+<h4>Eliminar Médico</h4>
 <h3>¿Está seguro de eliminar el siguiente registro?</h3>
 <div>
+    <h4>Medico</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            Código Medico:
+            Codigo Médico
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.CodMedico)
         </dd>
         <dt class = "col-sm-2">
-            DUI:
+            DUI
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.DuiMedico)
         </dd>
         <dt class = "col-sm-2">
-            Nombres:
+            Nombre
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.NomMedico)
         </dd>
         <dt class = "col-sm-2">
-            Apellidos:
+            Apellido
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ApeMedico)
         </dd>
         <dt class = "col-sm-2">
-            Direccion:
+           Direccion
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.DirMedico)
         </dd>
         <dt class = "col-sm-2">
-            Teléfono:
+            Telefono
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.TelMedico)
         </dd>
-        @*<dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Estado)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Estado)
-        </dd>*@
         <dt class = "col-sm-2">
-            Especialidad: 
+            Especialidad
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.IdEspecialidadNavigation.IdEspecialidad)
         </dd>
         <dt class = "col-sm-2">
-            Usuario: 
+            Usuario
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.IdUsuarioNavigation.IdUsuario)
         </dd>
     </dl>
-
+    
     <form asp-action="Delete">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <input type="hidden" asp-for="IdMedico" />
-        <input type="hidden" asp-for="CodMedico" class="form-control" />
-        
-        <input type="hidden" asp-for="DirMedico" class="form-control" />
-        
-        <input type="hidden" asp-for="DuiMedico" class="form-control" />
-        
-        <input type="hidden" asp-for="ApeMedico" class="form-control" />
-
-        <input type="hidden" asp-for="CodMedico" class="form-control" />
-        <input type="hidden" asp-for="NomMedico" class="form-control" />
-        <input type="hidden" asp-for="Estado" class="form-control" />
-
-        <input type="hidden" asp-for="IdUsuario" class="form-control" />
-
-        <input type="hidden" asp-for="IdEspecialidad" class="form-control" />
-
-        <input type="hidden" asp-for="TelMedico" class="form-control" />
         <div class="form-group">
             <input type="submit" value="Borrar" class="btn btn-danger" /> |
             <button asp-action="Index" class="btn btn-outline-dark">Volver</button>

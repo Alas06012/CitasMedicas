@@ -5,59 +5,66 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create Medico</h1>
+<h1>Create</h1>
+
+<h4>Medico</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label class="control-label"> Código Medico:</label>
+                <label asp-for="CodMedico" class="control-label"></label>
                 <input asp-for="CodMedico" class="form-control" />
                 <span asp-validation-for="CodMedico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">DUI</label>
+                <label asp-for="DuiMedico" class="control-label"></label>
                 <input asp-for="DuiMedico" class="form-control" />
                 <span asp-validation-for="DuiMedico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Nombres</label>
+                <label asp-for="NomMedico" class="control-label"></label>
                 <input asp-for="NomMedico" class="form-control" />
                 <span asp-validation-for="NomMedico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Apellidos</label>
+                <label asp-for="ApeMedico" class="control-label"></label>
                 <input asp-for="ApeMedico" class="form-control" />
                 <span asp-validation-for="ApeMedico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Direccion:</label>
+                <label asp-for="DirMedico" class="control-label"></label>
                 <input asp-for="DirMedico" class="form-control" />
                 <span asp-validation-for="DirMedico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Teléfono:</label>
+                <label asp-for="TelMedico" class="control-label"></label>
                 <input asp-for="TelMedico" class="form-control" />
                 <span asp-validation-for="TelMedico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="hidden" asp-for="Estado" value="1" class="form-control" />
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" class="form-control" />
+                <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Especialidad:</label>
+                <label asp-for="IdEspecialidad" class="control-label"></label>
                 <select asp-for="IdEspecialidad" class ="form-control" asp-items="ViewBag.IdEspecialidad"></select>
             </div>
             <div class="form-group">
-                <label class="control-label">Usuario:</label>
+                <label asp-for="IdUsuario" class="control-label"></label>
                 <select asp-for="IdUsuario" class ="form-control" asp-items="ViewBag.IdUsuario"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Crear" class="btn btn-primary" />
-                <a asp-action="Index" class="btn btn-outline-dark">Volver</a>
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

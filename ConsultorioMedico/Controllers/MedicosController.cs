@@ -21,7 +21,7 @@ namespace ConsultorioMedico.Controllers
         // GET: Medicos
         public async Task<IActionResult> Index()
         {
-            var proExpFinalContext = _context.Medicos.Include(m => m.IdEspecialidadNavigation).Include(m => m.IdUsuarioNavigation).Where(e => e.Estado == 1);
+            var proExpFinalContext = _context.Medicos.Where(e => e.Estado == 1).Include(m => m.IdEspecialidadNavigation).Include(m => m.IdUsuarioNavigation);
             return View(await proExpFinalContext.ToListAsync());
         }
 
@@ -58,17 +58,16 @@ namespace ConsultorioMedico.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdMedico,CodMedico,DuiMedico,NomMedico,ApeMedico,DirMedico,TelMedico,Estado,IdEspecialidad,IdUsuario")] Medico medico)
+        public async Task<IActionResult> Create([Bind("CodMedico,DuiMedico,NomMedico,ApeMedico,DirMedico,TelMedico,Estado,IdEspecialidad,IdUsuario")] Medico medico)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(medico);
+  
+                _context.Medicos.Add(medico);
                 await _context.SaveChangesAsync();
+                ViewData["IdEspecialidad"] = new SelectList(_context.Especialidads, "IdEspecialidad", "IdEspecialidad", medico.IdEspecialidad);
+                ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "IdUsuario", "IdUsuario", medico.IdUsuario);
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["IdEspecialidad"] = new SelectList(_context.Especialidads, "IdEspecialidad", "IdEspecialidad", medico.IdEspecialidad);
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "IdUsuario", "IdUsuario", medico.IdUsuario);
-            return View(medico);
+            
+          
         }
 
         // GET: Medicos/Edit/5
@@ -149,16 +148,17 @@ namespace ConsultorioMedico.Controllers
         // POST: Medicos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id, [Bind("IdMedico,CodMedico,DuiMedico,NomMedico,ApeMedico,DirMedico,TelMedico,Estado,IdEspecialidad,IdUsuario")] Medico medico)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Medicos == null)
             {
                 return Problem("Entity set 'ProExpFinalContext.Medicos'  is null.");
             }
+            var medico = await _context.Medicos.FindAsync(id);
             if (medico != null)
             {
                 medico.Estado = 0;
-                _context.Update(medico);
+                _context.Medicos.Update(medico);
             }
             
             await _context.SaveChangesAsync();

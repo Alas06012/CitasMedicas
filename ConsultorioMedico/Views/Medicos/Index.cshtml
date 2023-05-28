@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Administrar Médicos</h1>
+<h1>Administrar Medicos</h1>
 
 <p>
     <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
@@ -14,25 +14,22 @@
     <thead>
         <tr>
             <th>
-                Código Médico
+                Codigo Medico
             </th>
             <th>
                 DUI
             </th>
             <th>
-                Nombres
+                Nombre
             </th>
             <th>
-                Apellidos
+                Apellido
             </th>
             <th>
-                Dirección
+                Direccion
             </th>
             <th>
-                Teléfono
-            </th>
-            <th>
-                Estado
+                Telefono
             </th>
             <th>
                 Especialidad
@@ -66,16 +63,13 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.TelMedico)
                     </td>
-                    @*<td>
-            @Html.DisplayFor(modelItem => item.Estado)
-            </td>*@
+
                     <td>
                         @Html.DisplayFor(modelItem => item.IdEspecialidadNavigation.IdEspecialidad)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.IdUsuario)
                     </td>
-
                     <td class="d-flex justify-content-evenly">
                         <a asp-action="Edit" asp-route-id="@item.IdMedico" class="btn btn-outline-warning">Editar</a>
                         <a asp-action="Details" asp-route-id="@item.IdMedico" class="btn btn-outline-dark">Detalles</a>
@@ -83,7 +77,6 @@
                     </td>
                 </tr>
             }
-        
 }
     </tbody>
 </table>
