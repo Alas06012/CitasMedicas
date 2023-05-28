@@ -17,4 +17,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Diego\Ciclo 7\Paginas Web Activas\CitasMedicas\ConsultorioMedico\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\Diego\Ciclo 7\Paginas Web Activas\CitasMedicas\ConsultorioMedico\.editorconfig" />
+  </ItemGroup>
+
 </Project>
