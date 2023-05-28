@@ -22,7 +22,7 @@ namespace ConsultorioMedico.Controllers
         public async Task<IActionResult> Index()
         {
               return _context.Expedientes != null ? 
-                          View(await _context.Expedientes.ToListAsync()) :
+                          View(await _context.Expedientes.Where(e => e.Estado == 1).ToListAsync()) :
                           Problem("Entity set 'ProExpFinalContext.Expedientes'  is null.");
         }
 

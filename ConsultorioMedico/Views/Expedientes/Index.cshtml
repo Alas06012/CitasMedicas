@@ -27,22 +27,26 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CodExpediente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Responsable)
-            </td>
-           @* <td>
-                @Html.DisplayFor(modelItem => item.Estado)
+    if (item.Estado != 0)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CodExpediente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Responsable)
+                    </td>
+                    @* <td>
+            @Html.DisplayFor(modelItem => item.Estado)
             </td>*@
-             <td class="d-flex justify-content-evenly">
-                    <a asp-action="Edit" asp-route-id="@item.IdExpediente" class="btn btn-outline-warning">Editar</a> 
-                    <a asp-action="Details" asp-route-id="@item.IdExpediente" class="btn btn-outline-dark">Detalles</a> 
-                    <a asp-action="Delete" asp-route-id="@item.IdExpediente" class="btn btn-outline-danger">Borrar</a>
-            </td>
-        </tr>
+                    <td class="d-flex justify-content-evenly">
+                        <a asp-action="Edit" asp-route-id="@item.IdExpediente" class="btn btn-outline-warning">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.IdExpediente" class="btn btn-outline-dark">Detalles</a>
+                        <a asp-action="Delete" asp-route-id="@item.IdExpediente" class="btn btn-outline-danger">Borrar</a>
+                    </td>
+                </tr>
+            }
+        
 }
     </tbody>
 </table>

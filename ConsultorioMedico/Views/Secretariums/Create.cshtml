@@ -13,9 +13,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label class="control-label">Codigo Secretaria:</label>
-                <input asp-for="CodSecre" class="form-control" />
-                <span asp-validation-for="CodSecre" class="text-danger"></span>
+                <input asp-for="CodSecre" value="1" class="form-control" type="hidden"/>
             </div>
              <div class="form-group">
                 <label class="control-label">Nombres:</label>
@@ -44,7 +42,7 @@
                 <span asp-validation-for="TelSecre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="hidden" asp-for="Estado" class="form-control" />
+                <input type="hidden" asp-for="Estado" value="1" class="form-control" />
             </div>
             <div class="form-group">
                 <label class="control-label">Usuario</label>

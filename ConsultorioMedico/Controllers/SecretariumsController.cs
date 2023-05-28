@@ -21,7 +21,7 @@ namespace ConsultorioMedico.Controllers
         // GET: Secretariums
         public async Task<IActionResult> Index()
         {
-            var proExpFinalContext = _context.Secretaria.Include(s => s.IdUsuarioNavigation);
+            var proExpFinalContext = _context.Secretaria.Include(s => s.IdUsuarioNavigation).Where(e => e.Estado == 1);
             return View(await proExpFinalContext.ToListAsync());
         }
 

@@ -21,7 +21,7 @@ namespace ConsultorioMedico.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            var proExpFinalContext = _context.Usuarios.Include(u => u.IdPreguntaNavigation).Include(u => u.IdRolNavigation);
+            var proExpFinalContext = _context.Usuarios.Include(u => u.IdPreguntaNavigation).Include(u => u.IdRolNavigation).Where(e => e.Estado == 1);
             return View(await proExpFinalContext.ToListAsync());
         }
 

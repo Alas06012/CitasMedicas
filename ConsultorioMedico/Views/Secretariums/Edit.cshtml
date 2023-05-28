@@ -14,9 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdSecretaria" />
             <div class="form-group">
-                <label class="control-label">Código Secretaria</label>
-                <input asp-for="CodSecre" class="form-control" />
-                <span asp-validation-for="CodSecre" class="text-danger"></span>
+                <input asp-for="CodSecre" value="1" class="form-control" type="hidden"/>
             </div>
             <div class="form-group">
                 <label class="control-label">DUI</label>
